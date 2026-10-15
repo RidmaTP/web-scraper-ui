@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import { BACKEND_API_URL } from './constants';
 
 const getResponseError = async (response: Response): Promise<string> => {
   const responseText = await response.text();
@@ -45,7 +46,7 @@ function App() {
 
     try {
       const response = await fetch(
-        `http://localhost:8000/api/v1/result?url=${encodeURIComponent(urlInput)}`,
+        `${BACKEND_API_URL}?url=${encodeURIComponent(urlInput)}`,
         {
           headers: {
             'X-Request-ID': crypto.randomUUID(),
