@@ -1,8 +1,8 @@
 version: "3.8"
 
 services:
-  go-app:
-    container_name: web-analyzer
+  web-scraper-ui:
+    container_name: web-analyzer-ui
     build:
       context: .
       dockerfile: Dockerfile

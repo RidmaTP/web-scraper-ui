@@ -134,7 +134,7 @@ function App() {
         overflow: 'hidden',
       }}
     >
-      <h1 style={{ textAlign: 'center' }}>Web Analyzer</h1>
+      <h1 style={{ textAlign: 'center' }}>Web Scraper</h1>
       <div style={{ marginBottom: '0.5rem', display: 'flex', alignItems: 'center' }}>
         <input
           type="text"
