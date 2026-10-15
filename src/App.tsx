@@ -223,7 +223,11 @@ function App() {
             <ul>
               {Array.isArray(eventData.InternalLinks?.Links)
                 ? eventData.InternalLinks.Links.map((link: string, i: number) => (
-                  <li key={`internal-${i}`}>{link}</li>
+                  <li key={`internal-${i}`}>
+                      <a href={link} target="_blank" rel="noopener noreferrer">
+                      {link}
+                    </a>
+                  </li>
                 ))
                 : <li>Links: Not found</li>}
             </ul>
